@@ -8,11 +8,14 @@ Files left in the working directory signify that these are still in the work-in-
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+use git diff --staged to compare the diff between staging area and the repository. Once you satisfy with the changes you have made, you can then commit to the repository as one logical change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+When you have an experimental feature that you want to try out but the main branch still needs to be supported. To do this you create a new branch to track your experimental features and changes.
 
 How do the diagrams help you visualize the branch structure?
+It shows the parent path of the tip of each branch. You can also identify the unreachable commits from the graph.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
