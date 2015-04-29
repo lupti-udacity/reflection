@@ -12,13 +12,19 @@ use git diff --staged to compare the diff between staging area and the repositor
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-When you have an experimental feature that you want to try out but the main branch still needs to be supported. To do this you create a new branch to track your experimental features and changes.
+When you have an experimental feature that you want to try out but the main branch still needs to be supported, foe example, main is your current production version. To do this you create a new branch to track your experimental features and changeswhile keeping the production version unchanged.
 
 How do the diagrams help you visualize the branch structure?
 It shows the parent path of the tip of each branch. You can also identify the unreachable commits from the graph.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+You get an automatic merged master that Git uses its merging algoritm. Git will display conflict areas during the merge whcih requires your intervention to resolve the conflicts. The diagram reflects the outcome of the desired :wq
+merge process.
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+Automatic mergings:
+Pros: It helps you to focus on the changes made between two branches. It has great values if the files are large and not easy to do a manual comparisons.
+Cons: It cannot identify changes just made cosmatically and have no impact to the logic. It has no intelligent in telling the significant of the changes. In this case, human intervention is required.
+
