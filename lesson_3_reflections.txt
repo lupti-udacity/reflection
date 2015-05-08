@@ -1,4 +1,27 @@
 When would you want to create a remote repository rather than keeping all your local?  
 When you have a initial workable apps and you need a place to safekeep the work you've done, it is good idea to create a remote repository to store it there. Also if you have some interesting work you want to share with your public domain, you want to create a remote repository and push your work there to share and get feedback.
 
-add another line here to trigger a change on this file, just for fun.
+add another line here to trigger a change on this file, just for fun
+
+Why might you want to always pull changes manually rather than having Git automaically stay up-to-date with your remote repository?
+Pull manually gives you a better control on the logical commit that is meaningful to the local user.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks: When you want to work on someone's project in your local computer, contribute to the work for someone's project.
+Clones: When you want to copy a remote project on your local computer to work on.
+Branches: When you want to venture into some new idea on the given project either originate by you or by someone, you can always create a new branch to experient it before either merge to the master or abandon the branch all together.
+
+What is the benefit of having a copy of the last known state of the remote stored locally.
+You can work off-line onthe local copy and commit for the push to the remote. 
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+You would need to manually passing the changed files around using wither email or old fashion USB memory stick. If the project involves multiple contributors, the notification of changes would be very complex and hard to manage.
+The Git and GitHub provides a central hub for all the contributors to have a unify and organized platform to work on. It can provide a very actuate version control.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+When you collaborate with your team on the changes that might affect your teammates, you would want to share you changes and be reviewed by your teammates before committed to the master. This would be best to make the changes on a separate branch and push to your GitHub forked repository for "pull-request" by your teammate. More importantly, keeping non-master branch within the fork and your localrespoitory, you can easily keep your master branch up-to-date with master of the forked repository and the upstream original repository while you can making progressive changes on your branch in your local repository.
+The direct commit to master would normally happenif there is an urgent request to fix the bug on production. However, this is not recommended on a normal work flow without the team to review.  
+
+
+
